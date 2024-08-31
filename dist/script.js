@@ -39,7 +39,7 @@ function getMovieData(movieName) {
 }
 function displayMovieData(data) {
     const movieHTML = `
-        <div class="col-6">
+        <div class="col-md-6 order-md-1 order-2">
         <h3 class="text-center my-2">${data.Title} (${data.Year})</h3>
         <p><strong>Director:</strong> ${data.Director}</p>
         <p><strong>Actors:</strong> ${data.Actors}</p>
@@ -50,7 +50,7 @@ function displayMovieData(data) {
         <p><strong>IMDB Rating:</strong> ${data.imdbRating} / 10</p>
         <p><strong>Awards:</strong> ${data.Awards} / 10</p>
         </div>
-        <div class="col-6 d-flex flex-column align-items-center justify-content-center">
+        <div class="col-md-6 d-flex flex-column align-items-center justify-content-center order-md-2 order-1">
         <img src="${data.Poster}" alt="${data.Title} Poster" class="img-fluid mb-2">
         </div>
     `;
