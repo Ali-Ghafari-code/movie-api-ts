@@ -26,6 +26,10 @@ interface MovieData {
     Response: string;
     Error?: string;
 }
+document.querySelector('body')!.onload = () => {
+    alert('This site is made with typescript');
+};
+
 
 document.getElementById('get-movie-btn')!.addEventListener('click', () => {
     const movieName = (document.getElementById('movie-input') as HTMLInputElement).value;

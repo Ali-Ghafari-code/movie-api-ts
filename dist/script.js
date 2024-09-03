@@ -8,6 +8,9 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
+document.querySelector('body').onload = () => {
+    alert('This site is made with typescript');
+};
 document.getElementById('get-movie-btn').addEventListener('click', () => {
     const movieName = document.getElementById('movie-input').value;
     if (movieName) {
